@@ -19,7 +19,7 @@ To participate in this workshop, ensure you have access to a SaaS Business Centr
 
 To participate in this workshop, you will need access to a SaaS Business Central Environment where the Suite Engine API Engine Extension is installed.
 
-## Create API Set
+## Create an API Set
 
 An API set is a collection of operations or functions that are designed to interact with a specific endpoint, allowing users to perform various actions or retrieve data through the API.
 

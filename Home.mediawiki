@@ -1,5 +1,5 @@
 # Welcome to the APIEngine wiki!
 
-1.  [[API Engine Terms and Definitions|APIEngineTermsAndDefinitions.md]]
+1.  [[APIEngineTermsAndDefinitions.md|API Engine Terms and Definitions]]
 2.  How-to
-    - [[Authentication|How-To-Authentication.md]]
+    - [[How-To-Authentication.md|Authentication]]

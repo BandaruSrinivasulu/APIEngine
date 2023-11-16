@@ -1,7 +1,0 @@
-Welcome to the APIEngine wiki!
-
-[[APIEngineTermsAndDefinitions|API Engine Terms and Definitions]]
-
-How-to
-
-[[How-To-Authentication|Authentication]]

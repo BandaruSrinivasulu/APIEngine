@@ -1,15 +1,21 @@
 # API Set
 
-The API Set is a Record that represents a collection of API Functions and one or more [API Credentials](#def-api-credential). The API Set allows for some referential information about the collection. Most often, the API Set is used to contain many API end points that work together for a functional platform. Example: The Shopify Admin API.
+The API Set is a table of records that represents a collection of [API Functions](#def-api-function) and one or more [API Credentials](#def-api-credential). The API Set allows for some referential information about the collection. Most often, the API Set is used to contain many API end points that work together for a functional platform. Example: The Shopify Admin API.
 
-# <a id="def-api-credential"></a>API Credential
+[Learn More](LearnMoreLists/LearnMore-APISet.md)
 
-Under Construction
-
-# <a id="def-api-function"></a>API Function
+# API Credential
 
 Under Construction
 
-# <a id="def-api-function-variable"></a>API Function Variable
+# API Function
+
+Under Construction
+
+# API Function Variable
+
+Under Construction
+
+# API Function Mapping
 
 Under Construction

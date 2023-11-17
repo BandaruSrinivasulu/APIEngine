@@ -2,6 +2,8 @@
 
 Navigate to the API Set List Page
 
+![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet-Assets/CreateAPISet-01.png)
+
 Enter your **API Set Code** on a new list line.  Note that the code is user defined with a maximum length of 20 characters.  Example: POSTMANECHO.
 
 Complete the Line with the remaining fields on the line.

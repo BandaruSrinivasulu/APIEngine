@@ -2,7 +2,7 @@
 
 ## How to Documents
 
-[Create an API Set](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet)
+[Create an API Set](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet.md)
 
 ## How to Videos
 

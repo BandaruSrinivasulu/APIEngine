@@ -6,6 +6,6 @@
 
 ## How to Videos
 
-[Create an API Set Video](https://stsuiteengineeastus.blob.core.windows.net/doc-assets/APIEngine/Videos/HowTo-CreateAPISet.mp4)
+[Create an API Set Video](https://docs.suiteengine.com/horizontalproducts/apiengine/assets/videos/HowTo-CreateAPISet.mp4)
 
 ## Workshop Examples and References

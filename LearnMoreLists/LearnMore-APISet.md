@@ -6,7 +6,7 @@
 
 ## How to Videos
 
-<a href="https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet-Assets/HowTo-CreateAPISet.mp4"target="Create API Set Video">width="240" height="180" boarder="10" />
+<a href="https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet-Assets/HowTo-CreateAPISet.mp4" target="Create API Set Video">width="240" height="180" boarder="10" />
 Test for Video
 </a>
 

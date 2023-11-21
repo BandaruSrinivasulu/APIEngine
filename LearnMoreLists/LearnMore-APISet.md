@@ -6,6 +6,6 @@
 
 ## How to Videos
 
-[Create an API Set](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet.mp4)
+![Create an API Set](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet.mp4)
 
 ## Workshop Examples and References

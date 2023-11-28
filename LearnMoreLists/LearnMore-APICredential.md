@@ -6,6 +6,6 @@
 
 ## How to Videos
 
-[Create an API Set Video](https://docs.suiteengine.com/horizontalproducts/apiengine/assets/videos/HowTo-CreateAPICredential-NoAuth.mp4)
+[Create an API Credential Video](https://docs.suiteengine.com/horizontalproducts/apiengine/assets/videos/HowTo-CreateAPICredential.mp4)
 
 ## Workshop Examples and References

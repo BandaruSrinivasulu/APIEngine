@@ -14,6 +14,9 @@ The API Credential record is associated with an API set and defines the authenti
 
 The [API Credential](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential) Usage Code (PK2) field is used situations where the [API Credential](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential) could change based on the applications needs.  For example, you could have a number of Shopify Stores, each requiring their own specific credentials, but the API definitions do not change, only the credentials change. In this case, it is necessary to supply the API Engine with the correct usage code at run time with an [API Parameter](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-parameter) Record added to the API Message Record which represents the API Call.  The API Parameter record needs to have the Record Parameter Type with key = CredentialUsageCode and the value containing the usage code to use in getting the appropriate [API Credential](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential) to use.
 
+Learn More
+[How to use the API Credential Usage Code](https://github.com/SuiteEngine/APIEngine/wiki/How-To-Use-The-API-Credential-Usage-Code)
+
 # API Function
 
 Under Construction
@@ -24,7 +27,12 @@ Under Construction
 
 # API Function Mapping
 
-Under Construction
+:Construction: Under Construction
+
 # API Parameter
+
+Under Construction
+
+# API Message
 
 Under Construction

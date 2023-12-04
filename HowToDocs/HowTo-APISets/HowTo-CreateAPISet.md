@@ -17,3 +17,5 @@ Complete the Line with the remaining fields on the line.
 7.  **Response Message Encoding** - The default encoding method for API responses that will be used for each [API Function](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function) related to this API Set.  The API Functions Response Message Encoding will be defaulted to this value, however, each [API function](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function) can be changed to have a different encoding method from this default.  Example: UTF8  
     ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APISets/HowTo-CreateAPISet-Assets/CreateAPISet-03.png)  
     Now that you have created the API Set, you can proceed with adding one or more [API Credential](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential) Records as well as the [API Functions](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function) for this API Set.
+
+

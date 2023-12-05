@@ -1,12 +1,14 @@
 # How to Create an API Function
 
-This Section will describe how to add simple API Function to an [API Set](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-set) .  In this how to document, our example API Call will use the [Postman Echo Get Request method](https://www.postman.com/postman/workspace/published-postman-templates/request/631643-078883ea-ac9e-842e-8f41-784b59a33722?ctx=documentation) to send the following url to the postman echo api: [https://postman-echo.com/get?hand=wave.](https://postman-echo.com/get?hand=wave.)  But first, lets look at the anatomy of the url we want to send.
+This Section will describe how to add simple API Function to an [API Set][APISetDef].  In this how to document, our example API Call will use the [Postman Echo Get Request method](https://www.postman.com/postman/workspace/published-postman-templates/request/631643-078883ea-ac9e-842e-8f41-784b59a33722?ctx=documentation) to send the following url to the postman echo api: [https://postman-echo.com/get?hand=wave.](https://postman-echo.com/get?hand=wave.)  But first, lets look at the anatomy of the url we want to send.
 
 - The base url is: [https://postman-echo.com](https://postman-echo.com)
 - The url path is: **get**
 - The Query Parameters are: **hand=wave**
 
-First, navigate to the [API Set](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-set) that you wish to add the API Function to and then Navigate to API Functions.  
+In this How To, we will see how the API Engine can construct the API Endpoint URL for data stored in [API Credentials][APICredentialDef] and the [API Function][APIFunctionDef].
+
+First, navigate to the [API Set][APISetDef] that you wish to add the API Function to and then Navigate to API Functions.  
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Navigate-From-APISet-To-APIFunctions.png)
 
 Then type in Function Code: GET_HANDWAVE and press the Edit action.  
@@ -38,3 +40,18 @@ Definition of  the fields we left empty on this How-To:
 6.  **Response Root Object Name** - The name of the root object to be used for the response.  For JSON responses this is required, for XML responses it is optional.  Defaults to RESPONSEOBJECT.
 7.  **Save Http Response Headers** - By default, the API Engine does not store Http Response Headers as part of the API Message after the API Call has been made.  By switching this field to true, the Response header information will be saved with the API Message and can be viewed.
 8.  **Use Mappings From Function** - Allows one API Function to share API Mappings from another API Function, this is useful when the reponse has the same structure in more that one API Function.  For example, GETORDERSFORSTATUS may have the same response structure as GETORDERSAFTERDATETIME.  Although the API Functions may have different request data, the response structure would be the same.
+9.  **Next Function Code** - Specifies the next API Function that should be called after this API Function completes.  Note that the next function could be this API Function when the same API Call is made repeatably.  This is useful when the external API has limits on the number of records you can retrieve in one API Call, but provides pagination tools to bring large amounts of data via a series of API calls.
+10. **Next Token Processing Function** - This field provides a developer the means to specify the logic for how Next Token or pagination logic should be implemented by this function.  Since different API Platforms have different approaches to how this occurs, the API Engine does not provide this logic out of the box.  However you can extend this enumeration and provide an implementation CodeUnit that uses the SENAPINextTokenWebRequestProcessing Interface.
+
+Next lets complete our how to by adding the Hand=Wave query parameter to the URL.  From the API Functions list page for the API Set, activate the API Variables Action Ribbon and press the Action URL Parameters.
+![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Navigate-URLParameters-From-APIFunction.png)
+
+Add a new line to the API Variables as follows:
+![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Example-APIVariable-URLParm-Static-HandWave.png)
+
+
+
+[APISetDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-set "Definition of an API Set"
+[APICredentialDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential "Definition of an API Credential"
+[APIFunctionDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function "Definition of an API Function"
+[APIParameterDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-parameter "Definition of an API Parameter"

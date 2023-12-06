@@ -1,21 +1,24 @@
 # How to Create an API Function
 
-This Section will describe how to add simple API Function to an [API Set][APISetDef].  In this how to document, our example API Call will use the [Postman Echo Get Request method](https://www.postman.com/postman/workspace/published-postman-templates/request/631643-078883ea-ac9e-842e-8f41-784b59a33722?ctx=documentation) to send the following url to the postman echo api: [https://postman-echo.com/get?hand=wave.](https://postman-echo.com/get?hand=wave.)  But first, lets look at the anatomy of the url we want to send.
+This Section will describe how to add simple API Function to an [API Set](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-set).  In this how to document, our example API Call will use the [Postman Echo Get Request method](https://www.postman.com/postman/workspace/published-postman-templates/request/631643-078883ea-ac9e-842e-8f41-784b59a33722?ctx=documentation) to send the following url to the postman echo api: [https://postman-echo.com/get?hand=wave.](https://postman-echo.com/get?hand=wave.)  But first, lets look at the anatomy of the url we want to send.
 
 - The base url is: [https://postman-echo.com](https://postman-echo.com)
 - The url path is: **get**
 - The Query Parameters are: **hand=wave**
 
-In this How To, we will see how the API Engine can construct the API Endpoint URL for data stored in [API Credentials][APICredentialDef] and the [API Function][APIFunctionDef].
+In this How To, we will see how the API Engine can construct the API Endpoint URL for data stored in [API Credentials](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential) and the [API Function](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function).
 
-First, navigate to the [API Set][APISetDef] that you wish to add the API Function to and then Navigate to API Functions.  
+First, navigate to the [API Set](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-set) that you wish to add the API Function to and then Navigate to API Functions.
+
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Navigate-From-APISet-To-APIFunctions.png)
 
-Then type in Function Code: GET_HANDWAVE and press the Edit action.  
+Then type in Function Code: GET_HANDWAVE and press the Edit action.
+
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Edit-API-Function-Action.png)  
 Note: The function code does not necessarily need to be GET-HANDWAVE, it can be whatever code you want to assign to this function. For the sake of this exercise, please use GET_HANDWAVE
 
-Next, fill out the fields on the API Variable card page as follows:  
+Next, fill out the fields on the API Variable card page as follows:
+
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/APIFunction_Echo_Get_Hand_Wave.png)
 
 Definition of  the fields entered for this How-To:
@@ -43,15 +46,26 @@ Definition of  the fields we left empty on this How-To:
 9.  **Next Function Code** - Specifies the next API Function that should be called after this API Function completes.  Note that the next function could be this API Function when the same API Call is made repeatably.  This is useful when the external API has limits on the number of records you can retrieve in one API Call, but provides pagination tools to bring large amounts of data via a series of API calls.
 10. **Next Token Processing Function** - This field provides a developer the means to specify the logic for how Next Token or pagination logic should be implemented by this function.  Since different API Platforms have different approaches to how this occurs, the API Engine does not provide this logic out of the box.  However you can extend this enumeration and provide an implementation CodeUnit that uses the SENAPINextTokenWebRequestProcessing Interface.
 
-Next lets complete our how to by adding the Hand=Wave query parameter to the URL.  From the API Functions list page for the API Set, activate the API Variables Action Ribbon and press the Action URL Parameters.
+Next lets complete our how to by adding the Hand=Wave query parameter to the URL.
+
+From the API Functions list page for the API Set, activate the API Variables Action Ribbon and press the Action URL Parameters.
+
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Navigate-URLParameters-From-APIFunction.png)
 
 Add a new line to the API Variables as follows:
+
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Example-APIVariable-URLParm-Static-HandWave.png)
 
+See other wiki documentation for more information on how API Variables work in building the API request.  For this example, we just add a static (fixed / hardcoded) value = wave to the URL Parameter API Variable named hand.  This API Variable will take care of the last piece of the URL we need to build.  https://postman-echo.com/get?**hand=wave**
 
+Now lets see if we have a working API Call, close the API Variable list page and return to the API Functions list for our example API Set.  Select the GET_HANDWAVE API Function and press the Execute Action from the Home action ribbon.
 
-[APISetDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-set "Definition of an API Set"
-[APICredentialDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential "Definition of an API Credential"
-[APIFunctionDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function "Definition of an API Function"
-[APIParameterDef]: https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-parameter "Definition of an API Parameter"
+![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Execute-APIFunction-HandWave.png)
+
+Click Yes on the Dialog asking if you want to open the API Message.
+
+Remember there is an API Message for every API Call executed, and it records the request information sent, as well as the response received as a result of a successful call being made.
+
+As you can see from the below API Message information, we have successfully called the Postman Echo API with the Get Request Method and a valid key value parameter: hand=wave.
+
+![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/APIMessage-Success-HandWave.png)

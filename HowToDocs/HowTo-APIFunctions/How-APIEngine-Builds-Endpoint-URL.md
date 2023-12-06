@@ -11,7 +11,7 @@ URLs can be broken down into logical pieces, the SuiteEngine API Engine breaks d
     1.  Tags - just a text parameter - safemode
     2.  Key Value - Parameters that have both a key and a value component. - foo=bar
 
-Put them all together and you have a endpoint url:   [https://my.baseurl.com/my/fixed/path/myaccountnumber?myaccountnumber&foo=bar](https://my.baseurl.com/my/fixed/path/myaccountnumber?myaccountnumber&foo=bar)
+Put them all together and you have a endpoint url:   [https://my.baseurl.com/my/fixed/path/myaccountnumber?myaccountnumber&foo=bar](https://my.baseurl.com/my/fixed/path/myaccountnumber?safemode&foo=bar)
 
 For a new API Message where the Query Request is empty, the API Engine takes the following steps to build the Endpoint URL
 

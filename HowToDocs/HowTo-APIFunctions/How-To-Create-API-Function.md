@@ -56,7 +56,7 @@ Add a new line to the API Variables as follows:
 
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIFunctions/HowTo-APIFunctions-Assets/Example-APIVariable-URLParm-Static-HandWave.png)
 
-See other wiki documentation for more information on how API Variables work in building the API request.  For this example, we just add a static (fixed / hardcoded) value = wave to the URL Parameter API Variable named hand.  This API Variable will take care of the last piece of the URL we need to build.  https://postman-echo.com/get?**hand=wave**
+See other wiki documentation for more information on how API Variables work in building the API request.  For this example, we just add a static (fixed / hardcoded) value = wave to the URL Parameter API Variable named hand.  This API Variable will take care of the last piece of the URL we need to build. [https://postman-echo.com/get?**hand=wave**](https://postman-echo.com/get?hand=wave)
 
 Now lets see if we have a working API Call, close the API Variable list page and return to the API Functions list for our example API Set.  Select the GET_HANDWAVE API Function and press the Execute Action from the Home action ribbon.
 

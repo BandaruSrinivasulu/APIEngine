@@ -10,6 +10,6 @@
 
 ## How to Videos
 
-[How The API Engine Selects an API Credential](https://docs.suiteengine.com/apiengine/en-US/_site_/videos/How-APIEngine-ChoosesAPICredential.mp4)
+[How The API Engine Selects an API Credential](https://docs.suiteengine.com/apiengine/en-US/_site/videos/How-APIEngine-ChoosesAPICredential.mp4)
 
 ## Workshop Examples and References

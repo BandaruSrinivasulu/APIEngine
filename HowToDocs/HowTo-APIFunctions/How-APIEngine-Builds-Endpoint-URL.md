@@ -18,7 +18,7 @@ For a new API Message where the Query Request is empty, the API Engine takes the
 1.  Determine the value of the base url, this normally comes from the selected API Credential Record, unless there is an URL Override API variable associated with the API Function, then its value is used.
 2.  Next, if the API Function has a value for the Static Path value, a / and the Static Path value is appended to the base url.
 3.  Then, if the API Function has API Variables of type URL Path, they are added sequentially to the url in auto build sequence order.  Slashes are added automatically where appropriate.
-4.  Finaly, if the API Function has API Variables of type URL Parameter, a ? is appended to the url and URL Parameter records are added sequentially to the url in auto build sequence order.  & are added automatically where appropriate.  Note that key value query parameters use Variable Value type Key Value Text, and Tag parameters use Variable Value type Text Value.
+4.  Finally, if the API Function has API Variables of type URL Parameter, a ? is appended to the url and URL Parameter records are added sequentially to the url in auto build sequence order.  The ampersign (&) character is automatically inbetween multiple parameters.  Note that key value query parameters use Variable Value type Key Value Text, and Tag parameters use Variable Value type Text Value.
 
 If you are re-executing an API Message that already has a Query Request defined, then that Query Request stored on the message is used and the API Endpoint url.
 

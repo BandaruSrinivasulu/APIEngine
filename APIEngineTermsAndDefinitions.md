@@ -25,13 +25,16 @@ API Functions serves as a definition of how to make a particular API call.  You
 
 # API Variable
 
-API Variables are records that are used to construct an API Request for an API Function.  There are different types of API Variables for different purposes.
+API Variables are records that are used to construct an API Request for an [API Function](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function).  There are different types of API Variables for different purposes.
 
 - URL - Overrides the Base URL portion of the API Call URL endpoint.  The Base URL normally comes from the [API Credential](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-credential) Record that is chosen at runtime, however using this Variable type will override that value for this [API Function](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function).
 - URL Path - Variables that construct the API Call URL Endpoints Variable Path. (versus the fixed path that can be specified directly on the [API Function](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions#api-function).
-- URL Parameter  - Variables that construct the API Call URL Endpoints Query Parms or Tags.
-- Header  - Variables that construct the API Call Request Headers.
-- Body - Variables that construct the API Call Request Body.
+- URL Parameter  - Variables that construct the API Call Endpoints Query Parms or Tags.
+- Header  - Variables that construct the API Request Headers.
+- Body - Variables that construct the API Request Body.
+
+[Learn More](https://github.com/SuiteEngine/APIEngine/wiki/LearnMore-APIVariable)
+
 
 # API Mapping
 

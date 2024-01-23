@@ -6,6 +6,8 @@
 
 [How the SuiteEngine API Engine Builds the API Endpoint URL](https://github.com/SuiteEngine/APIEngine/wiki/How-APIEngine-Builds-Endpoint-URL)
 
+[How to Copy an API Function to a new API Function](https://github.com/SuiteEngine/APIEngine/wiki/How-To-Copy-API-Function)
+
 ## How to Videos
 
 Create an API Function Video

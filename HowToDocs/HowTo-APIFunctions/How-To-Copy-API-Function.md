@@ -1,6 +1,6 @@
 # How to Copy an API Function
 
-This Section will describe how to copy an API Function to a new API Function.  This is partically useful where API Functions are simular, or follow a certain pattern and you do not want to start from scratch.
+This Section will describe how to copy an API Function to a new API Function.  This is partially useful where API Functions are similar, or follow a certain pattern and you do not want to start from scratch.
 
 First Navigate to the API Function you want to copy, and select Copy API Function from the Action Menu.
 

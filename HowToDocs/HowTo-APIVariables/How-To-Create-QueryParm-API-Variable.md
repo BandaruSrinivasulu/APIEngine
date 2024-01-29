@@ -45,7 +45,7 @@ Now lets add the Customer Id Query Parameter.  In this exercise, I have chosen 
 
 Now we add a second line to the list for our custid query parm as follows:
 
-![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIMessages/HowTo-APIVariables-Assets/APIVariable-CustId-QueryParm.png)
+![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIVariables/HowTo-APIVariables-Assets/APIVariable-CustId-QueryParm.png)
 
 Definition of  the fields entered for this hand=wave URL Parameter Value:
 

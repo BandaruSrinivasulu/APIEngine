@@ -74,7 +74,7 @@ To add our API Parameter record that represents a Business Central Customer Reco
 
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIMessages/HowTo-APIMessages-Assets/APIMessagePage-AddParameterTableRecord.png)
 
-We then need to pick a Table for the API Parameter.  In our case, we want the Customer table.
+We then need to pick a Table for the API Parameter. In our case, we want the Customer table.
 
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIMessages/HowTo-APIMessages-Assets/APIMessagePage-AddParameterTableRecord-Customer.png)
 
@@ -89,3 +89,33 @@ Now that we successfully have our School of Fine Arts Customer attached as an AP
 Our API Message now executes and returns back the response we were hoping for.
 
 ![](https://github.com/SuiteEngine/APIEngine/wiki/HowToDocs/HowTo-APIMessages/HowTo-APIMessages-Assets/APIMessagePage-DataViewer.png)
+
+**Adding an API Parameter to an API Message with AL Code**
+
+For Developers, you can initialize an API Message, Add the Customer record API Parameter to the API Message, and Execute the API Message all with the following Business Central AL Code.  (Below Example simply just adds to the Hello World Page Extension Object).
+
+```
+// Welcome to your new AL extension.
+// Remember that object names and IDs should be unique across all extensions.
+// AL snippets start with t*, like tpageext - give them a try and happy coding
+
+/// <summary>
+/// PageExtension CustomerListExt (ID 50200) extends Record Customer List.
+/// </summary>
+pageextension 50200 CustomerListExt extends "Customer List"
+{
+    trigger OnOpenPage();
+    var
+        Customer: Record Customer;
+        SENAPIMessage: Record "SENAPI Message";
+        SENAPIMessageManagement: Codeunit SENAPIMessageManagement;
+
+    begin
+        Customer.Get('30000');
+        SENAPIMessage := SENAPIMessageManagement.CreateNewAPIMessage('POSTMANECHO', 'GETHANDWAVEANDCUSTOMERID'); //Creates the API Message For the API Function
+        SENAPIMessageManagement.AddNewRecordParamterToAPIMessage(SENAPIMessage, Customer.RecordId);//Add the Customer Record to the API Message Parameters
+        SENAPIMessageManagement.ExecuteAPIMessage(SENAPIMessage);//Execute the API Message to do the API Function
+        Message('App published: Hello world');
+    end;
+}
+```

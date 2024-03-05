@@ -4,7 +4,7 @@ The SuiteEngine API Engine is a Microsoft D365 Business Central App designed to 
 
 ---
 
-[Terms and Definitions](https://github.com/SuiteEngine/APIEngine/wiki/APIEngineTermsAndDefinitions)
+[Terms and Definitions](APIEngineTermsAndDefinitions.md)
 
 How To Documents
 
